@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "a0177359-f45a-4116-a8df-278ec5ab0b2f",
+		"name": "FIAP - Challenge - Eletro",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5625164"
+	},
+	"item": [
+		{
+			"name": "Buscar todas as pessoas cadastradas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/eletro/pessoas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"eletro",
+						"pessoas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar uma pessoa específica por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/eletro/pessoas/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"eletro",
+						"pessoas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar pessoa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Jack Sparrow\",\n    \"dataNascimento\": \"1963-06-09\",\n    \"sexo\": \"MASCULINO\",\n    \"email\": \"jack.sparrow@gmail.com\",\n    \"telefone\": \"(11) 3385-8010\",\n    \"parentesco\": \"primo distante\",\n    \"endereco\": \"black pearl in the 7 seas\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/eletro/pessoas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"eletro",
+						"pessoas"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
