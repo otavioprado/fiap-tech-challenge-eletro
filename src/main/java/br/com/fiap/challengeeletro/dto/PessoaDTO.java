@@ -44,9 +44,8 @@ public class PessoaDTO {
     @Pattern(regexp = "\\(\\d{2}\\)\\s\\d{4}-\\d{4}", message = "Número de telefone inválido")
     private String telefone;
 
-    @NotBlank
-    @Size(min = 5, max = 100)
-    private String endereco;
+    @NotNull
+    private Long enderecoId;
 
     private String parentesco;
 
